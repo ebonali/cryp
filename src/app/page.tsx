@@ -11,10 +11,11 @@ export default function Home() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="relative w-full py-24 md:py-40 px-4">
-          <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute top-1/2 -left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl" />
-            <div className="absolute top-1/3 -right-1/4 w-80 h-80 bg-purple-500/10 rounded-full blur-3xl" />
+        <section className="relative w-full py-32 md:py-48 px-4 overflow-hidden">
+          <div className="absolute inset-0 pointer-events-none overflow-hidden">
+            <div className="absolute top-1/2 -left-1/3 w-[600px] h-[600px] bg-primary/15 rounded-full blur-3xl opacity-60" />
+            <div className="absolute top-1/4 -right-1/3 w-[500px] h-[500px] bg-purple-500/12 rounded-full blur-3xl opacity-50" />
+            <div className="absolute -bottom-1/4 left-1/2 w-[400px] h-[400px] bg-blue-500/10 rounded-full blur-3xl opacity-40" />
           </div>
 
           <div className="container max-w-[1200px] mx-auto relative z-10">
@@ -26,15 +27,15 @@ export default function Home() {
               </div>
 
               {/* Main Headline */}
-              <div className="space-y-6">
-                <h1 className="text-6xl sm:text-7xl lg:text-8xl font-black tracking-tight leading-[0.95] text-balance">
-                  Your crypto bio<br />
-                  <span className="text-gradient">reimagined.</span>
+              <div className="space-y-8">
+                <h1 className="text-7xl sm:text-8xl lg:text-9xl font-black tracking-tighter leading-[0.92] text-balance">
+                  Your crypto bio,<br />
+                  <span className="text-gradient">perfected.</span>
                 </h1>
 
                 {/* Subheading */}
-                <p className="text-xl sm:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-medium">
-                  Connect wallets, get paid instantly, control your digital identity. Zero fees. Zero middlemen. Pure crypto.
+                <p className="text-xl sm:text-2xl text-muted-foreground/90 max-w-3xl mx-auto leading-relaxed font-medium">
+                  Connect wallets, accept payments, showcase your NFTs. One beautiful link. No fees. No limits.
                 </p>
               </div>
 
@@ -54,17 +55,17 @@ export default function Home() {
               </div>
 
               {/* Social Proof - Trust Badges */}
-              <div className="pt-12 border-t border-border/50">
-                <p className="text-sm text-muted-foreground font-medium mb-8">Trusted by leading creators globally</p>
-                <div className="grid grid-cols-3 gap-6 md:gap-12 max-w-2xl mx-auto">
+              <div className="pt-16 border-t border-border/40">
+                <p className="text-sm text-muted-foreground/80 font-medium mb-12 uppercase tracking-wider">Trusted by creators worldwide</p>
+                <div className="grid grid-cols-3 gap-8 md:gap-16 max-w-2xl mx-auto">
                   {[
-                    { label: 'Active Creators', value: '10K+' },
-                    { label: 'Transactions', value: '$50M+' },
-                    { label: 'Countries', value: '150+' }
+                    { label: 'Active Creators', value: '15K+' },
+                    { label: 'Transactions', value: '$75M+' },
+                    { label: 'Countries', value: '180+' }
                   ].map((stat, i) => (
-                    <div key={i} className="space-y-2">
-                      <div className="text-3xl md:text-4xl font-black text-foreground">{stat.value}</div>
-                      <div className="text-xs md:text-sm text-muted-foreground font-medium">{stat.label}</div>
+                    <div key={i} className="space-y-3 p-4 rounded-lg hover:bg-foreground/5 transition-colors">
+                      <div className="text-4xl md:text-5xl font-black text-foreground">{stat.value}</div>
+                      <div className="text-xs md:text-sm text-muted-foreground/70 font-semibold">{stat.label}</div>
                     </div>
                   ))}
                 </div>
@@ -183,16 +184,16 @@ export default function Home() {
         </section>
 
         {/* Features Grid Section */}
-        <section id="features" className="relative w-full py-24 md:py-32 px-4">
+        <section id="features" className="relative w-full py-32 md:py-40 px-4 border-b border-border/40">
           <div className="container max-w-[1200px] mx-auto">
             {/* Section Header */}
-            <div className="max-w-3xl mx-auto text-center mb-20 space-y-6">
-              <p className="text-primary text-sm font-bold uppercase tracking-wider">Everything You Need</p>
-              <h2 className="text-5xl md:text-6xl font-black tracking-tight leading-tight">
-                Complete tools for Web3 creators.
+            <div className="max-w-3xl mx-auto text-center mb-24 space-y-6">
+              <p className="text-primary text-sm font-bold uppercase tracking-widest">Powerful Features</p>
+              <h2 className="text-6xl md:text-7xl font-black tracking-tight leading-tight">
+                Everything for your web3 presence.
               </h2>
-              <p className="text-xl text-muted-foreground leading-relaxed">
-                All features designed to help you build your crypto presence, monetize your audience, and stay in complete control.
+              <p className="text-xl text-muted-foreground/90 leading-relaxed font-medium max-w-2xl mx-auto">
+                Purpose-built tools to help you establish, monetize, and maintain your complete crypto identity.
               </p>
             </div>
 
@@ -203,22 +204,25 @@ export default function Home() {
                 return (
                   <div
                     key={i}
-                    className="group relative p-8 rounded-2xl border border-border/60 bg-card hover:border-primary/40 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+                    className="group relative overflow-hidden p-8 rounded-2xl border border-border/60 bg-background hover:border-primary/50 transition-all duration-500 hover:shadow-2xl hover:-translate-y-2"
                   >
                     {/* Gradient Background on Hover */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity -z-10" />
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary/8 via-transparent to-primary/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10" />
+                    
+                    {/* Top accent line */}
+                    <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
 
-                    {/* Icon */}
-                    <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                      <Icon className="h-7 w-7 text-primary" />
+                    {/* Icon Container */}
+                    <div className="w-16 h-16 rounded-xl bg-gradient-to-br from-primary/15 to-primary/5 flex items-center justify-center mb-6 group-hover:from-primary/25 group-hover:to-primary/10 transition-all duration-500 group-hover:scale-110">
+                      <Icon className="h-8 w-8 text-primary group-hover:scale-125 transition-transform duration-500" />
                     </div>
 
                     {/* Content */}
-                    <h3 className="text-xl font-bold mb-3 group-hover:text-primary transition-colors">{feature.title}</h3>
-                    <p className="text-muted-foreground leading-relaxed">{feature.description}</p>
+                    <h3 className="text-2xl font-bold mb-4 text-foreground group-hover:text-primary transition-colors duration-300">{feature.title}</h3>
+                    <p className="text-muted-foreground/85 leading-relaxed text-base">{feature.description}</p>
 
                     {/* Hover Arrow */}
-                    <ChevronRight className="absolute right-6 bottom-6 h-5 w-5 text-primary opacity-0 group-hover:opacity-100 transition-all group-hover:translate-x-1" />
+                    <ChevronRight className="absolute right-8 bottom-8 h-6 w-6 text-primary/60 opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1" />
                   </div>
                 );
               })}
@@ -227,28 +231,36 @@ export default function Home() {
         </section>
 
         {/* Stats / Impact Section */}
-        <section className="relative w-full py-24 md:py-32 px-4 border-y border-border/40 bg-secondary/30">
-          <div className="container max-w-[1200px] mx-auto">
-            <div className="text-center mb-20 space-y-6">
-              <p className="text-primary text-sm font-bold uppercase tracking-wider">The Impact</p>
-              <h2 className="text-5xl md:text-6xl font-black tracking-tight leading-tight">
-                Why creators choose us.
+        <section className="relative w-full py-32 md:py-40 px-4 border-y border-border/40 bg-foreground/2">
+          <div className="absolute inset-0 pointer-events-none overflow-hidden">
+            <div className="absolute top-1/2 left-1/4 w-[400px] h-[400px] bg-primary/8 rounded-full blur-3xl opacity-40" />
+            <div className="absolute bottom-0 right-1/4 w-[300px] h-[300px] bg-purple-500/6 rounded-full blur-3xl opacity-30" />
+          </div>
+
+          <div className="container max-w-[1200px] mx-auto relative z-10">
+            <div className="text-center mb-24 space-y-6">
+              <p className="text-primary text-sm font-bold uppercase tracking-widest">Why We&apos;re Different</p>
+              <h2 className="text-6xl md:text-7xl font-black tracking-tight leading-tight">
+                Built for serious creators.
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-12">
+            <div className="grid md:grid-cols-2 gap-8">
               {comparisons.map((item, i) => (
                 <div
                   key={i}
-                  className="relative p-8 rounded-2xl border border-border/60 bg-background overflow-hidden group hover:border-primary/40 transition-all"
+                  className="group relative p-10 rounded-2xl border border-border/50 bg-card/50 hover:bg-card/80 overflow-hidden transition-all duration-500 hover:border-primary/40 hover:shadow-xl hover:-translate-y-1"
                 >
                   {/* Gradient Accent */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
+                  
+                  {/* Top Accent */}
+                  <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
 
                   <div className="relative space-y-4">
-                    <h3 className="text-sm font-bold text-muted-foreground uppercase tracking-wider">{item.metric}</h3>
-                    <p className="text-6xl md:text-7xl font-black text-gradient">{item.value}</p>
-                    <p className="text-lg text-muted-foreground leading-relaxed">{item.description}</p>
+                    <h3 className="text-xs font-bold text-primary/80 uppercase tracking-widest">{item.metric}</h3>
+                    <p className="text-7xl md:text-8xl font-black text-gradient leading-none">{item.value}</p>
+                    <p className="text-lg text-muted-foreground/80 leading-relaxed pt-2">{item.description}</p>
                   </div>
                 </div>
               ))}
@@ -257,41 +269,42 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="relative w-full py-24 md:py-40 px-4">
+        <section className="relative w-full py-40 md:py-48 px-4 overflow-hidden">
           <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-purple-500/10 blur-3xl" />
+            <div className="absolute top-1/2 -left-1/4 w-[600px] h-[600px] bg-primary/12 rounded-full blur-3xl opacity-50" />
+            <div className="absolute -bottom-1/4 -right-1/4 w-[500px] h-[500px] bg-purple-500/10 rounded-full blur-3xl opacity-40" />
           </div>
 
           <div className="container max-w-[1200px] mx-auto relative z-10">
-            <div className="max-w-3xl mx-auto text-center space-y-10">
+            <div className="max-w-4xl mx-auto text-center space-y-12">
               {/* Main CTA */}
-              <div className="space-y-6">
-                <h2 className="text-5xl md:text-6xl lg:text-7xl font-black tracking-tight leading-tight">
-                  Ready to take control?
+              <div className="space-y-8">
+                <h2 className="text-7xl md:text-8xl lg:text-9xl font-black tracking-tighter leading-[0.92]">
+                  Launch your <span className="text-gradient">perfect</span> bio today.
                 </h2>
-                <p className="text-xl text-muted-foreground leading-relaxed">
-                  Join thousands of creators building their decentralized presence. Get started in seconds, no credit card required.
+                <p className="text-2xl text-muted-foreground/90 leading-relaxed font-medium max-w-3xl mx-auto">
+                  Join 15K+ creators who already trust CryptoBio.Link. Get started instantly with no setup fees.
                 </p>
               </div>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
                 <Link href="/auth?tab=signup">
-                  <Button size="lg" className="rounded-xl px-8 h-14 text-base font-semibold shadow-lg hover:shadow-xl transition-all">
-                    Get started free
-                    <ArrowRight className="ml-2 h-5 w-5" />
+                  <Button size="lg" className="rounded-xl px-10 h-14 text-base font-semibold shadow-xl shadow-primary/30 hover:shadow-2xl hover:shadow-primary/40 transition-all hover:scale-105">
+                    Start building now
+                    <ArrowRight className="ml-3 h-5 w-5" />
                   </Button>
                 </Link>
                 <Link href="https://twitter.com/cryptobiolink" target="_blank" rel="noopener noreferrer">
-                  <Button variant="outline" size="lg" className="rounded-xl px-8 h-14 text-base font-semibold">
-                    Follow updates
+                  <Button variant="outline" size="lg" className="rounded-xl px-10 h-14 text-base font-semibold hover:bg-foreground/8">
+                    Follow us
                   </Button>
                 </Link>
               </div>
 
-              {/* Trust Signal */}
-              <div className="pt-8 border-t border-border/50">
-                <p className="text-sm text-muted-foreground">✓ Free forever tier • ✓ No payment required • ✓ Full data privacy</p>
+              {/* Trust Signals */}
+              <div className="pt-12 border-t border-border/40">
+                <p className="text-sm text-muted-foreground/80 font-medium">Free forever • No credit card • Always private</p>
               </div>
             </div>
           </div>
