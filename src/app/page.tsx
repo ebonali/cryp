@@ -11,9 +11,9 @@ export default function Home() {
 
       <main className="flex-1">
         {/* Decorative Blobs */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[800px] pointer-events-none -z-10 opacity-50 dark:opacity-20 transition-opacity">
-           <div className="absolute top-[-10%] left-[10%] w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px] animate-pulse" />
-           <div className="absolute top-[20%] right-[10%] w-[400px] h-[400px] bg-purple-500/10 rounded-full blur-[100px] animate-pulse" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[800px] pointer-events-none -z-10 opacity-40 dark:opacity-30 transition-opacity">
+           <div className="absolute top-[-10%] left-[10%] w-[500px] h-[500px] bg-primary/15 dark:bg-primary/25 rounded-full blur-[120px] animate-pulse" />
+           <div className="absolute top-[20%] right-[10%] w-[400px] h-[400px] bg-purple-500/8 dark:bg-purple-500/15 rounded-full blur-[100px] animate-pulse" style={{ animationDelay: '2s' }} />
         </div>
 
         {/* Hero Section */}
@@ -125,7 +125,7 @@ export default function Home() {
         </section>
 
         {/* Feature Grid */}
-        <section id="features" className="w-full py-32 bg-secondary/30 dark:bg-background/50 border-y border-foreground/5 relative overflow-hidden">
+        <section id="features" className="w-full py-32 bg-secondary/20 dark:bg-background border-y border-foreground/5 relative overflow-hidden">
           <div className="container max-w-[1100px] mx-auto px-4 relative z-10">
             <div className="text-center max-w-2xl mx-auto mb-20 space-y-4">
               <h2 className="text-4xl md:text-5xl font-black tracking-tight text-foreground">

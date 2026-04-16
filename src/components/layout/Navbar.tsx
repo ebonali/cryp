@@ -16,9 +16,9 @@ export function Navbar() {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-[100] pt-4 px-4">
+    <nav className="fixed top-0 left-0 right-0 z-[100] pt-4 px-4 bg-gradient-to-b from-background/80 to-transparent">
       <div className="container max-w-[1100px] mx-auto">
-        <div className="glass rounded-[28px] shadow-nav px-6 py-3 flex items-center justify-between transition-all duration-500">
+        <div className="glass rounded-[28px] shadow-nav px-6 py-4 flex items-center justify-between transition-all duration-500">
           <div className="flex items-center gap-8">
             <Link href="/" className="flex items-center gap-2.5 group">
               <div className="w-10 h-10 bg-gradient-primary rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-glow active:scale-95 shadow-lg shadow-primary/20">

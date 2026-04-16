@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <footer className="w-full py-20 px-4 bg-background border-t border-foreground/5 relative overflow-hidden">
       {/* Decorative gradient blur */}
-      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-primary/5 dark:bg-primary/8 rounded-full blur-[120px] pointer-events-none" />
       
       <div className="container max-w-[1100px] mx-auto relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-start gap-16 md:gap-8">
@@ -23,7 +23,7 @@ export function Footer() {
             </p>
             <div className="flex gap-4">
                {[Twitter, Instagram, GithubIcon].map((Icon, i) => (
-                 <a key={i} href="#" className="w-10 h-10 rounded-xl bg-secondary hover:bg-primary/10 hover:text-primary flex items-center justify-center transition-premium border border-foreground/5 shadow-sm">
+                 <a key={i} href="#" className="w-10 h-10 rounded-xl bg-secondary dark:bg-foreground/5 hover:bg-primary/10 dark:hover:bg-primary/20 hover:text-primary flex items-center justify-center transition-premium border border-foreground/5 shadow-sm">
                     <Icon className="h-4 w-4" />
                  </a>
                ))}

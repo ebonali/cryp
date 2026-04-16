@@ -11,12 +11,12 @@ export interface ButtonProps
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant = "primary", size = "md", isLoading, children, ...props }, ref) => {
     const variants = {
-      primary: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-premium",
+      primary: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-premium active:scale-95",
       gradient: "bg-gradient-primary text-white hover:opacity-90 shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-[0.98]",
-      secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-      outline: "border-2 border-primary/20 bg-transparent hover:bg-primary/5 hover:border-primary/40 text-foreground",
-      ghost: "hover:bg-primary/5 text-muted-foreground hover:text-foreground",
-      destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-sm",
+      secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80 active:scale-95",
+      outline: "border-2 border-primary/20 bg-transparent hover:bg-primary/5 dark:hover:bg-primary/10 hover:border-primary/40 text-foreground",
+      ghost: "hover:bg-foreground/10 dark:hover:bg-foreground/5 text-muted-foreground hover:text-foreground active:scale-95",
+      destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-sm active:scale-95",
     };
 
     const sizes = {
