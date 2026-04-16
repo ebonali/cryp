@@ -11,19 +11,19 @@ export interface ButtonProps
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant = "primary", size = "md", isLoading, children, ...props }, ref) => {
     const variants = {
-      primary: "bg-primary text-primary-foreground hover:bg-primary/90 hover:shadow-lg shadow-premium active:scale-95 font-semibold",
-      gradient: "bg-gradient-primary text-white hover:opacity-90 shadow-lg shadow-primary/20 hover:scale-[1.01] active:scale-[0.98] font-semibold",
-      secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80 active:scale-95 font-medium",
-      outline: "border-2 border-border/60 bg-background hover:bg-foreground/5 dark:hover:bg-foreground/10 hover:border-primary/40 text-foreground font-medium",
-      ghost: "text-muted-foreground hover:text-foreground hover:bg-foreground/8 active:scale-95 font-medium",
-      destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-sm active:scale-95 font-semibold",
+      primary: "bg-primary text-primary-foreground hover:bg-primary/90 shadow-premium active:scale-95",
+      gradient: "bg-gradient-primary text-white hover:opacity-90 shadow-lg shadow-primary/20 hover:scale-[1.02] active:scale-[0.98]",
+      secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80 active:scale-95",
+      outline: "border-2 border-primary/20 bg-transparent hover:bg-primary/5 dark:hover:bg-primary/10 hover:border-primary/40 text-foreground",
+      ghost: "hover:bg-foreground/10 dark:hover:bg-foreground/5 text-muted-foreground hover:text-foreground active:scale-95",
+      destructive: "bg-destructive text-destructive-foreground hover:bg-destructive/90 shadow-sm active:scale-95",
     };
 
     const sizes = {
-      sm: "h-9 px-4 text-xs rounded-lg",
-      md: "h-11 px-6 text-sm rounded-lg",
-      lg: "h-14 px-6 text-base rounded-lg",
-      icon: "h-10 w-10 rounded-lg",
+      sm: "h-9 px-4 text-xs font-bold uppercase tracking-wider rounded-xl",
+      md: "h-11 px-6 text-sm font-bold rounded-2xl",
+      lg: "h-14 px-10 text-base font-bold rounded-2xl",
+      icon: "h-11 w-11 rounded-2xl",
     };
 
     return (
