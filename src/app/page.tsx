@@ -22,17 +22,17 @@ export default function Home() {
             <div className="space-y-6">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/5 text-primary text-[13px] font-bold tracking-tight border border-primary/10 transition-premium hover:bg-primary/10 cursor-default">
                 <span className="flex h-2 w-2 rounded-full bg-primary animate-pulse" />
-                Trusted by 3M+ creators globally
+                Trusted by crypto creators worldwide
               </div>
               
               <h1 className="text-6xl font-black tracking-tight sm:text-7xl md:text-8xl leading-[0.9] text-foreground transition-premium">
-                Your crypto bio, <br />
-                <span className="text-gradient">reimagined.</span>
+                Your decentralized <br />
+                <span className="text-gradient">crypto bio.</span>
               </h1>
               
               <p className="mx-auto max-w-[700px] text-muted-foreground text-lg md:text-xl font-medium leading-relaxed">
-                Connect your wallets, showcase your links, and receive payments 
-                directly without middlemen. The future of social payments is here.
+                Connect your wallets, showcase your links, receive crypto payments directly. 
+                No platform fees, complete control, fully on-chain.
               </p>
             </div>
 
@@ -59,7 +59,7 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-              <p className="text-sm font-bold text-muted-foreground transition-premium">Join influencers already building on CryptoLink</p>
+              <p className="text-sm font-bold text-muted-foreground transition-premium">Join creators building decentralized bios on CryptoBio.Link</p>
             </div>
           </div>
         </section>
@@ -73,16 +73,16 @@ export default function Home() {
               </div>
               <div className="space-y-4">
                 <h2 className="text-4xl md:text-5xl font-black tracking-tight leading-[1.1] text-foreground">
-                  Stunning pages <br />
-                  <span className="text-gradient">in minutes.</span>
+                  Your crypto identity <br />
+                  <span className="text-gradient">in seconds.</span>
                 </h2>
                 <p className="text-lg text-muted-foreground font-medium leading-relaxed">
-                  Focus on your content, let us handle the design. Customise everything from 
-                  fonts to layouts with our intuitive visual editor.
+                  Set up your decentralized bio in seconds. Connect wallets, add links, 
+                  verify NFTs, and manage everything from one beautiful dashboard.
                 </p>
               </div>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {['Unlimited Bio Links', 'Multi-chain Support', 'Real-time Analytics', 'Zero Platform Fees'].map((feat, i) => (
+                {['Multi-Wallet Support', 'Multi-Chain Compatible', 'NFT Verification', 'Zero Fees'].map((feat, i) => (
                   <li key={feat} className="flex items-center gap-3 font-bold text-sm text-foreground/80">
                     <div className="h-6 w-6 rounded-lg bg-green-500/10 flex items-center justify-center">
                       <CheckCircle2 className="h-4 w-4 text-green-500" />
@@ -129,30 +129,30 @@ export default function Home() {
           <div className="container max-w-[1100px] mx-auto px-4 relative z-10">
             <div className="text-center max-w-2xl mx-auto mb-20 space-y-4">
               <h2 className="text-4xl md:text-5xl font-black tracking-tight text-foreground">
-                Everything you need to <br />
-                <span className="text-gradient">thrive in web3.</span>
+                Everything for your <br />
+                <span className="text-gradient">web3 presence.</span>
               </h2>
               <p className="text-muted-foreground font-medium text-lg">
-                We've built all the tools you need to grow your community and manage 
-                your digital assets in one place.
+                One powerful platform for managing your crypto identity, 
+                connecting wallets, and building your decentralized presence.
               </p>
             </div>
             
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
               <FeatureCard 
                 icon={<Globe className="h-6 w-6" />} 
-                title="Custom Domains" 
-                desc="Launch on your own custom domain. Fully white-labeled experience for your personal brand."
+                title="Custom Domain" 
+                desc="Use cryptobio.link or connect your own domain. Full white-label control over your brand."
               />
               <FeatureCard 
                 icon={<Rocket className="h-6 w-6" />} 
-                title="Direct Payments" 
-                desc="No platform fees, no wait times. Funds go directly from your fans to your wallet."
+                title="Direct Crypto Payments" 
+                desc="Accept crypto payments instantly with zero intermediaries. Funds settle directly to your wallet."
               />
               <FeatureCard 
                 icon={<Shield className="h-6 w-6" />} 
-                title="Privacy First" 
-                desc="The only link-in-bio where you truly own your data. Decentralized architecture."
+                title="On-Chain Verified" 
+                desc="Prove ownership with blockchain verification. Show off your wallets and NFT collections with confidence."
               />
             </div>
           </div>

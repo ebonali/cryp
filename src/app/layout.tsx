@@ -10,9 +10,14 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "CryptoLink — Your Crypto Link-in-Bio",
+  title: "CryptoBio.Link — Your Crypto Bio Link Made Easy",
   description:
-    "Get paid globally without a bank. Add your wallets, share your links, and receive payments in seconds.",
+    "Create your decentralized bio link. Connect crypto wallets, showcase NFTs, and receive payments directly. No platform fees, full control.",
+  openGraph: {
+    title: "CryptoBio.Link — Your Crypto Bio Link Made Easy",
+    description: "Create your decentralized bio link. Connect crypto wallets, showcase NFTs, and receive payments directly.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

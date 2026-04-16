@@ -14,12 +14,12 @@ export function Footer() {
               <div className="w-9 h-9 bg-gradient-primary rounded-xl flex items-center justify-center">
                 <Wallet className="h-5 w-5 text-white" />
               </div>
-              <span className="text-xl font-bold tracking-tight">
-                Crypto<span className="text-gradient">Link</span>
+              <span className="text-lg font-black tracking-tight">
+                Crypto<span className="text-gradient">Bio</span><span className="text-foreground">.link</span>
               </span>
             </Link>
             <p className="text-muted-foreground text-sm font-medium leading-relaxed">
-              The future of social payments. Built for creators who value freedom, simplicity, and complete ownership of their digital economy.
+              Your decentralized bio link platform. Built for creators who want full control over their web3 identity, wallets, and earnings.
             </p>
             <div className="flex gap-4">
                {[Twitter, Instagram, GithubIcon].map((Icon, i) => (
@@ -59,7 +59,7 @@ export function Footer() {
         
         <div className="mt-24 pt-8 border-t border-foreground/5 flex flex-col sm:flex-row justify-between items-center gap-6">
           <p className="text-[11px] font-black text-muted-foreground uppercase tracking-[0.25em]">
-            © 2026 CryptoLink Bio. All rights reserved.
+            © 2026 CryptoBio.Link. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
              <span className="text-[11px] font-black text-muted-foreground uppercase tracking-[0.2em]">Next.js</span>

@@ -24,8 +24,8 @@ export function Navbar() {
               <div className="w-10 h-10 bg-gradient-primary rounded-2xl flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-glow active:scale-95 shadow-lg shadow-primary/20">
                 <Wallet className="h-5 w-5 text-white" />
               </div>
-              <span className="text-xl font-black tracking-tight hidden sm:block selection:bg-primary/30">
-                Crypto<span className="text-gradient">Link</span>
+              <span className="text-lg font-black tracking-tight hidden sm:block selection:bg-primary/30">
+                Crypto<span className="text-gradient">Bio</span><span className="text-foreground">.link</span>
               </span>
             </Link>
 
